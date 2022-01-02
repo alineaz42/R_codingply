@@ -29,3 +29,8 @@ y <-seq(1,10,2)
 y
 # now i know how to use'em a little bit
 
+x <- seq(1,100,length=5)
+x
+
+x <- seq(1.00,24.154,length=5)
+x
