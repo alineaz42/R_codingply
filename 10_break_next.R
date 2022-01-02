@@ -8,9 +8,12 @@ for (i in 1:10) {
 
 # printing the odd numbers
 for (i in 1:10){
-  if (i %%2==0){
-    print(i)
-  }else{
+  if (i %%2!=0){
     print(i)
   }
+}
+
+for (i in 1:10){
+  if (i%%2==0) next
+  print(i)
 }
