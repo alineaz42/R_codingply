@@ -473,3 +473,188 @@ y<- (1:4)*10
 80 %in% x
 c(10,20) %in% x
 y %in% x
+
+
+
+
+x <- seq(1,10)
+x
+x[1]
+
+
+for (i in x){
+  print(i)
+}
+
+length(x)
+
+y <- c(1,2,3,4,5,564,3)
+y[-1]
+y
+y[-1]=5
+y
+y[1]=4
+y
+
+length(y)
+y[10]=10
+y
+# this code does not work properly
+# for (i in y){
+#   if (i == "NA"){
+#     print(i)
+#   }
+# }
+
+
+sum(y)
+y
+y <-y[-8:-9]
+y
+sum(y)
+
+replicate(x,5)
+x <- seq(1,10)
+replicate(x,4)
+
+
+x <- 1:10
+x
+
+for (i in seq_along(x)) {
+   print(i)
+}
+
+y <- 1:10
+x %in% y
+
+x <- rep(10,10)
+x
+
+
+
+x <- 1:10
+x
+x+2
+y <- x*3
+y
+x^-1
+x*x^-1
+
+
+x <- 1:10
+y <- 11:20
+x+y
+x-y
+x*y
+x/y
+
+
+
+sum(x)
+prod(x)
+rev(y)
+z <-rev(y)
+z
+y
+z %in% y
+z == y
+x <- rnorm(10,0,1)
+sort(x)
+sort(x,decreasing=T)
+
+y <- rnorm(10,0,1)
+x
+y
+x
+x %*% y 
+crossprod(x,y)
+
+x %o% y
+tcrossprod(x,y)== x%o%y
+
+# vector coersion
+x <- c(45,124.23."Neaz",44)
+x
+
+a <- c(34,234.3243,"neaz",34)
+a
+
+a <- c(32.232,424,323,323.232)
+a
+a <- 0:10
+as.logical(a)
+
+as.numeric("45")
+as.character(45)
+
+
+
+a <- 1:10
+b <- a>5
+b
+a
+b
+b <- a>5 & a<7
+b
+a > 5
+a <5
+which(a>5)
+a[which(a>5)]
+a[7]
+
+
+# factors ------------------------
+x <- factor(c("Male","Female","Female"))
+x
+table(x)
+
+
+# mathmatical functions in R------------
+
+
+a <- rnorm(10,1,2)
+a
+abs(a)
+ceiling(a)
+floor(a)
+round(a)
+
+sqrt(a)
+exp(a)
+log(x)
+log5(a)
+log2(a)
+log10(a)
+factorial(a)
+b <- 1:10
+factorial(b)
+sum(factorial(b))
+
+trunc(a)
+trunc(b)
+
+
+
+# random number generator in R -------
+# normal distribution 
+# binomial distribution
+# poission 
+# etc
+
+ran_norm<- rnorm(100,1,3)
+srot(plot(ran_norm))
+
+
+# matrix
+a <- 1:9
+m <- matrix(a,nrow=3,ncol=3,byrow=T)
+m
+n <- matrix(a,nrow=3,ncol=3)
+n
+m+n
+m*n
+m^-1
+a*2
+2*m
+m/2

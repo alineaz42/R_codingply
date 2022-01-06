@@ -93,3 +93,6 @@ for (i in 1:length(x)){
 }
 
 for ( i in seq_along(x)) print(i)
+
+
+
