@@ -795,3 +795,49 @@ mean(x)
 max(x)
 min(x)
 range(x)
+
+x <- rnorm(3,0,1)
+y <- rnorm(3,0,1)
+z <- rnorm(3,0,1)
+matA <- rbind(x,y,z)
+matA
+plot(matA)
+a <- rnorm(3,0,1)
+a
+x
+
+matA <- rbind(x,y,z,a)
+matA
+colnames(matA) <- c("sample1","sample2","sample3")
+matA
+sum(diag(matA))
+matA
+for (i in 1:3){
+  matB <- rbind(matA[i,])
+}
+matB
+for ( i in 1:3){
+  print(i)
+}
+
+
+X1 <- c(1,11,11,7,11,3,1,2,21,1,11,10)
+Y <- c(78.5,74.3,104.3,87.6,95.,109.2,102.7,72.7,93.1,115.9,113.3,109.4)
+matA <- rbind(X1,Y)
+matA
+plot(matA)
+length(X1) == length(Y)
+length(X1)
+length(Y)
+plot(X1,Y)
+X2 <- c(26,29,56,31,52,55,71,31,54,47,40,66)
+length(X2)
+matA <- rbind(matA,X2)
+matA
+t(matA)
+matA<-matA[-2,]<- X2
+matA<-matA[-3,]<- Y
+matA
+
+
+
