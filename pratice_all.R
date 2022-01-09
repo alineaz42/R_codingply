@@ -473,13 +473,19 @@ y<- (1:4)*10
 80 %in% x
 c(10,20) %in% x
 y %in% x
-
-
-
-
 x <- seq(1,10)
 x
 x[1]
+
+
+# factors
+x <- c("Silk","Dry","Normal")
+
+
+
+
+
+
 
 
 for (i in x){
@@ -658,3 +664,134 @@ m^-1
 a*2
 2*m
 m/2
+
+# factors 
+
+y <- factor(x)
+y
+table(y)
+
+
+
+  x <- c(-2,3,4,-5)
+abs(x)
+
+x <- c(-43.323,332.534543)
+trunc(x) - round(x)
+
+y <- 1:5
+factorial(x)
+
+x <- 1:4
+y <- 4:1
+z <- 5:8
+a <- 8:11
+matA <- rbind(x,y,z,a)
+matA
+diag(matA)
+sum(diag(matA))
+
+a <- diag(1:4)
+a
+b <- diag(1,3,3)
+b
+3*b
+dim(b)
+nrow(b)
+ncol(b)
+length(b)
+
+
+fours <- diag(4,3,3)
+fours
+
+b
+rownames(b) <- c("Alpha","Bravo","Charlie")
+colnames(b) <- c("Sierra","Tango","Romio")
+b
+sum(b)
+b[1,]
+b[,1]
+b[1,1]
+b[4,3]
+b[1,1]=5
+b
+values <- list(c(1,2,3),c(4,5,6),c(6,54,4))
+rbind(values[1],values[2],values[3])
+
+
+
+
+# Q: dry normal and silk shampoo sells are given form a matrix
+
+jan <- c(45,74,84)
+feb <- c(47,96,68)
+march <- c(74,14,57)
+
+matA <- rbind(jan,feb,march)
+matA
+colnames(matA) <- c("Dry","Silk","Normal")
+matA
+diag(matA)
+types <-rowSums(matA)
+months <-colMeans(matA)
+types[1]
+sum(tyeps)
+sum(types)
+sum(months)
+# suppose another month is added in the matrix april
+
+april <- c(43,53,32)
+matA <- rbind(jan,feb,march,april)
+matA
+matA
+matA
+
+
+diag(matA)
+rowSums(matA)< colSums(matA)
+
+dim(matA)
+transpose(matA)
+t(matA)
+matA
+colnames(matA) <- c("Dry","Normal","Silk")
+matA
+t(matA)
+Blackshine <- c(45,74,84,74)
+cbind(matA) <- c(Blackshine)
+matA
+
+rbind(matA) <- c(jan,feb,march,april)
+matA
+
+
+
+a1 <- c(4,3,6)
+a2 <- c(5,3,2)
+a3 <- c(7,4,2)
+matA <- rbind(a1,a2,a3)
+matA
+print(matA)
+
+T <- solve(matA)
+T
+a4 <- c(4,5,3)
+matA <- rbind(a4)
+matA
+rbind(matA) = c(a4)
+matA+a4
+plot(matA)
+hist(matA)
+boxplot(matA)
+# it takes time to think
+
+
+x <- rnorm(100,0,2)
+boxplot(x)
+hist(x)
+var(x)
+mean(x)
+max(x)
+min(x)
+range(x)
