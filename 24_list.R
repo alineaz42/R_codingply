@@ -40,3 +40,21 @@ student <- list(roll,snames,marks)
 # using c function we can direct pass in the list function to creat a list
 
 student2 <- list("id"=roll,"names"=snames,"scores"=marks)
+
+
+
+
+neaz <- list(c("Neaz","Rudra"),c(4754,8457))
+neaz
+neaz[[1]]
+neaz[[2]]
+# if we don't use double bracket we will get a list in return
+# to get a vector use double brackets
+
+
+neaz[[1]][2]
+neaz[[1]][1] <- "Araf"
+neaz
+neaz[[1]][2] <- "Mariya"
+neaz
+neaz[c(1,1)]
