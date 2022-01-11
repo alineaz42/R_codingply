@@ -53,3 +53,38 @@ students
 # now this is working bro
 
 
+
+id <- c(101,102,103)
+names <- c("A","B","C")
+marks <- c(75.48,84.7,68.154)
+students <- data.frame(id,names,marks)
+students
+
+
+# will remove the record below 60
+report <- subset(students,marks>60)
+report
+students
+
+report2 <- subset(students,marks>70 & id <103)
+report2
+# three argument can be passed in df 
+# 1. the df
+# 2. the criteria
+# 3. range like column
+report3 <- subset(students,marks>60,select = c(names))
+report3
+
+report4 <- subset(students,marks>60,select=c(marks))
+report4
+
+
+report5 <- subset(students,marks>70,select=c(names,marks))
+report5
+# i also can pass all the col names
+# if i don't pass the third argument it will take all the col names
+report6 <- subset(students,marks>70,select = names:marks)
+report7 <- subset(students,makrs>80,select = -names) 
+# negative sign will remove that one always remember
+# but the main dataframe remains the same 
+# cause it returns a image of the dataframe
