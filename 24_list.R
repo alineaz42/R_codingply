@@ -58,3 +58,13 @@ neaz
 neaz[[1]][2] <- "Mariya"
 neaz
 neaz[c(1,1)]
+
+
+# list concatination
+roll <- 101:103 # first list
+snames <- c("John","Bob","Merly")
+marks <- c(54,66,54)
+students <- list(roll,snames,marks)
+# second list
+ages <- list(c(21,22,23))
+students <- list(students,ages)
