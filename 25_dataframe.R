@@ -88,3 +88,12 @@ report7 <- subset(students,makrs>80,select = -names)
 # negative sign will remove that one always remember
 # but the main dataframe remains the same 
 # cause it returns a image of the dataframe
+
+
+# rbind
+id <- c(101:103)
+name <- c("BAD","Good","Worse")
+marks <- c(53.434,54.2342,54.234)
+students <- data.frame(id,name,marks)
+
+students <- rbind(students,data.frame(id=104,name="Bob",marks=45.314))
