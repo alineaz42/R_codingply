@@ -97,3 +97,16 @@ marks <- c(53.434,54.2342,54.234)
 students <- data.frame(id,name,marks)
 
 students <- rbind(students,data.frame(id=104,name="Bob",marks=45.314))
+age <- c(22,23,21,22)
+
+students <- cbind(students,data.frame(age))
+length(students[,1])
+
+
+
+# edit function
+id <- 101:103
+name <- c("A","B","C")
+marks <- c(32.434,54.43,33.534)
+students <- data.frame(id,name,marks)
+studenttable <- edit(students)
