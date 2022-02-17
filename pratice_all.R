@@ -78,6 +78,9 @@
 # x &y
 # !y
 
+# x <- rbinom(1000,500,0.5)
+# y <- dbinom(x,500,0.5,main="hist of Binom")
+# hist(y)
 # 10 & 1
 # 10 & 0
 # !-10
@@ -841,3 +844,17 @@ matA
 
 
 
+x <- rexp(100,0.7)
+y <- dexp(x,0.7)
+hist(y)
+plot(x,y)
+x.b <- rbinom(1000,100,0.7)
+y.b <- dbinom(x,100,0.7,)
+plot(x.b,y.b)
+
+x <- rnorm(5000,0,1)
+y <- sample(x,100,replace=T)
+hist(y,16)
+x<-c(20,30,35,32,40,50,43)
+hist(x)
+help(hist,breaks=6)
